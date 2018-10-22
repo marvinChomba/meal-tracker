@@ -1,0 +1,11 @@
+.row {
+  margin-left: 50px;
+}
+.form-inline {
+  margin: 0 auto;
+  width: 400px;
+  padding: 10px;
+}
+select {
+  width: 200px;
+}

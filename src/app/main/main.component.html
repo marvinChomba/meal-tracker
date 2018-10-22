@@ -1,0 +1,19 @@
+<h1 class="text-center">Meal Tracker</h1>
+<form class="form-inline">
+  <div class="form-group">
+    <select name="filter" id="filter" class="form-control">
+      <option value="1">All</option>
+      <option value="2">High Calories</option>
+      <option value="3">Low Calories</option>
+    </select>
+    <button class="btn btn-primary ml-4" (click)="filterItems()">Filter</button>
+  </div>
+</form>
+<div class="row">
+  <div class="col-5">
+    <app-form (adder)="addFood($event)" ></app-form>
+  </div>
+  <div class="col-7">
+    <app-food-details [foods]="foods" (clicked)="foodToEdit($event)"></app-food-details> 
+  </div>
+</div>
