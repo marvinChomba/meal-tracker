@@ -1,6 +1,6 @@
 <div class="cont" *ngFor="let food of foods;let i = index">
-  <p>Name: <strong>{{food.name}}</strong></p>
+  <p>Name: <strong>{{food.name|uppercase}}</strong></p>
   <p>Calories: {{food.calories}}</p>
   <p>Details: {{food.details}}</p>
-  <button class="btn btn-info btn-sm" (click)="clicked.emit(i)">Edit</button>
+  <button class="btn btn-info btn-sm" (click)="editFood.emit(food)">Edit</button>
 </div>

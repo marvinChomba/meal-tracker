@@ -9,3 +9,9 @@
 select {
   width: 200px;
 }
+body {
+  background: rgba(236, 240, 241,0.6);
+  min-height: 675px;
+  width: 100%;
+  overflow-x: hidden;
+}

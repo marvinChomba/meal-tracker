@@ -1,4 +1,4 @@
-import { Component, OnInit, Input,Output,EventEmitter } from '@angular/core';
+import { Component, OnInit, Input, Output,EventEmitter } from '@angular/core';
 import { Food } from '../food';
 @Component({
   selector: 'app-food-details',
@@ -7,7 +7,7 @@ import { Food } from '../food';
 })
 export class FoodDetailsComponent implements OnInit {
   @Input() foods:Food;
-  @Output() clicked = new EventEmitter<Food>();
+  @Output() editFood = new EventEmitter<Food>();
   constructor() { }
 
   ngOnInit() {

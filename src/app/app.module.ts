@@ -6,7 +6,6 @@ import { FoodDetailsComponent } from './food-details/food-details.component';
 import { FormComponent } from './form/form.component';
 import { MainComponent } from './main/main.component';
 import { FilterService } from "./filter.service";
-import { EditService } from './edit.service';
 @NgModule({
   declarations: [
     AppComponent,
@@ -18,7 +17,8 @@ import { EditService } from './edit.service';
     BrowserModule,
     FormsModule
   ],
-  providers: [FilterService,EditService],
+  providers: [FilterService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
+

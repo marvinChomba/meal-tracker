@@ -14,7 +14,7 @@ export class FilterService {
       return highArr
     } else if(val == 3) {
       return arr.filter(elem => {
-        return elem.calories<500;
+        return (elem.calories<500 && elem.calories > 0);
       })
     }
 
